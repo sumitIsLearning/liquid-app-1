@@ -1,0 +1,14 @@
+{% assign main_menu_linklist = linklists.main-menu.links %}
+
+<header> 
+    <div>
+        <h2>{{shop.name}}</h2>
+    </div>
+    <div>
+        <ul>
+            {% for link in main_menu_linklist %}  
+                <li><a href="{{link.url}}">{{link.title}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</header>
